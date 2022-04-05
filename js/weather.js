@@ -1,7 +1,12 @@
-/**/
+/*  
+  id: openAPIgetter
+  pw: APIgetter
+  "latitude":36.4445696,"longitude":126.7924992
+  https://api.openweathermap.org/data/2.5/weather?lat=36.4445696&lon=126.7924992&appid=3e3180103d0da92c4295b12535d090a9
+*/
 const weather = document.querySelector(".js-weather");
 
-const API_KEYS = "16d2d16d9509c2df81b64bf4823b3a38";
+const API_KEYS = "3e3180103d0da92c4295b12535d090a9";
 const COORDS = "coords";
 
 function savePosition(COORDS_obj) {
