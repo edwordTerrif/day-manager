@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Sigmar+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Jomolhari&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>day maneger</title>
+  </head>
+
+  <body>
+    <div class="js-opacity"></div>
+
+    <div class="js-set set">
+      <span class="one">◼</span>
+      <span class="two">◼</span>
+      <span class="three">◼</span>
+    </div>
+
+    <div class="js-option option hide">
+      <span class="js-text-background text-background ">backgrund</span>
+
+      <form class="js-form-bgot">
+        <label class="js-ot-label ot-label hide " for="bg-option"
+          >bg slide time zone
+          <select id="bg-option" class="js-timezone bg-timeset ">
+            <span>bg slide time zone option</span>
+            <option value="none">none</option>
+            <option value="300000">5 minutes</option>
+            <option value="600000">10 minutes</option>
+            <option value="900000">15 minutes</option>
+            <option value="1200000">20 minutes</option>
+            <option value="1500000">25 minutes</option>
+            <option value="1800000">30 minutes</option>
+          </select>
+        </label>
+      </form>
+
+      <span class="js-text-interface text-interface">interface</span>
+
+      <form class="js-form-interot">
+        <div class="js-inter-option inter-ot hide">
+          <label class="js-label-rename label-rename" for="label"
+            >rename :
+            <input
+              id="label"
+              class="js-input-rename input-rename"
+              placeholder="enter rename"
+            />
+          </label>
+
+          <label class="js-label-colors label-colors" for="font"
+            >colors
+            <select class="js-slet-colors slet-colors" id="font">
+              <option value="white">white</option>
+              <option value="dark">dark</option>
+            </select>
+          </label>
+
+          <label class="js-label-types label-types" for="type"
+            >hour types
+            <select class="js-slet-types slet-types" id="type">
+              <option value="24hours">24hours</option>
+              <option value="12hours">12hours</option>
+            </select>
+          </label>
+        </div>
+      </form>
+    </div>
+
+    <div class="js-clock div-clock">
+      <span class="js-time"></span> <span class="js-period "></span>
+    </div>
+
+    <form class="js-form form">
+      <input
+        class="js-input local-user-style"
+        type="text"
+        placeholder="enter your name "
+      />
+    </form>
+    <span class="js-printing printing"></span>
+
+    <form class="js-todo form-todo">
+      <input
+        class="js-todo-input todo-style"
+        type="text"
+        placeholder="enter todos"
+      />
+    </form>
+    <ul class="js-todo-print"></ul>
+
+    <span class="js-weather weather-span"></span>
+    <!-- {timer document}
+    <div class="js-div-timer div-aram">
+      <dialog class="js-dialog-timer dialog-timer" open
+        >option
+        <form class="js-form-timer-set timer-form">
+          <input
+            class="js-input-timer-hours timer-hours"
+            type="text"
+            placeholder="hours min:0 max:24"
+          />
+
+          <input
+            class="js-input-timer-minutes timer-minutes"
+            type="text"
+            value="0"
+            placeholder="minutes min:0 max:60"
+          />
+
+          <input
+            class="js-input-timer-seconds timer-seconds"
+            type="text"
+            value="0"
+            placeholder="seconds min:0 max:60"
+          />
+
+          <input class="submit-btn" type="submit" value="submit" />
+        </form>
+      </dialog>
+    </div>
+  -->
+
+    <!-- [outo play video]
+      <div class="set-video">
+        <video id="autotest" autoplay preload="auto" loop="loop" muted="muted">
+          <source id="mp4-document" src="universe.mp4" type="video/mp4" />
+        </video>
+      </div>
+    -->
+
+    <script src="./js/clock.js"></script>
+    <script src="./js/localUser.js"></script>
+    <script src="./js/todo.js"></script>
+    <script src="./js/backgrund.js"></script>
+    <script src="./js/weather.js"></script>
+    <script src="./js/setting.js"></script>
+  </body>
+</html>
