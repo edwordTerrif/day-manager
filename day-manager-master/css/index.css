@@ -6,10 +6,9 @@ body {
 
 .div-clock {
   position: absolute;
-  top: 15%;
-  left: 38%;
-  right: 0;
-  bottom: 0;
+  top: 200px;
+  left: 50%;
+  transform: translate(-50%, 0%);
 }
 
 .js-time,
@@ -52,11 +51,11 @@ body {
 
 .showing {
   position: absolute;
-  text-align: center;
-  top: 35%;
-  left: 44%;
+  display: table;
+  top: 400px;
+  left: 50%;
+  transform: translate(-50%, 0%);
   color: whitesmoke;
-  display: block;
   font-size: 45px;
   font-family: "Jomolhari", serif;
 }
@@ -64,6 +63,7 @@ body {
 .local-user-style,
 .todo-style {
   background: none;
+  text-align: center;
   border: 0;
   outline: none;
   color: snow;
@@ -103,8 +103,9 @@ li {
 
 .form-todo {
   position: absolute;
-  top: 55%;
-  left: 38%;
+  top: 600px;
+  left: 50%;
+  transform: translate(-50%, 0%);
 }
 
 .todo-style {
