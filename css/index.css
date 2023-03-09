@@ -163,7 +163,7 @@ li {
   position: absolute;
   padding: 3px, 3px, 3px, 3px;
   top: 0;
-  right: 6.6%;
+  right: 7.3%;
 }
 
 .set span {
@@ -350,8 +350,24 @@ span {
   color: white;
 }
 
+.label-rename,
+.label-colors,
+.label-types {
+  text-align: left;
+}
+
 .label-rename {
-  top: 6%;
+  top: 5%;
+  right: 8%;
+}
+
+.label-colors {
+  top: 8%;
+  right: 8%;
+}
+
+.label-types {
+  top: 11%;
   right: 8%;
 }
 
@@ -360,19 +376,9 @@ span {
   font-size: 80%;
 }
 
-.label-colors {
-  top: 8.5%;
-  right: 8.9%;
-}
-
 .slet-colors {
   padding-left: 5%;
   margin-top: 12%;
-}
-
-.label-types {
-  top: 11%;
-  right: 7.3%;
 }
 
 .slet-types {
