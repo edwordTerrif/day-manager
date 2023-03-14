@@ -4,19 +4,52 @@ const clock = document.querySelector(".js-clock"),
 
 let typesHandle;
 
+/*
+timeLine = [];
+for(let i = 1; i < 25; i++) {
+  timeLine.push(i);
+}
+timeLine.forEach(function(item) {
+  console.log(timeConversion(item, "12").time)
+})
+*/
+
+function timeConversion(hours, zone = "24") {
+  const meridiem = hours < 12 || hours == 24 ? "AM" : "PM";
+  const time = zone === "12" && hours > 12 ? hours-12 : hours;
+  return {time: time, meridiem: meridiem};
+}
+
 function setupDate() {
   const date = new Date();
   const seconds = date.getSeconds(),
     minutes = date.getMinutes(),
-    hours = date.getHours();
+    hours = date.getHours() === 0 ? 24 : date.getHours();
   init();
 
+  const meridiem = timeConversion(hours).meridiem;
+
+  if (typesHandle === "12hours") {
+    const timeTwelve = timeConversion(hours, "12").time;
+    time.innerText = `${timeTwelve < 10 ? `0${timeTwelve}` : timeTwelve}:${
+      minutes < 10 ? `0${minutes}` : minutes
+      }:${seconds < 10 ? `0${seconds}` : seconds}`;
+    period.innerText = meridiem;
+  } else {
+    const timeTwentyfour = timeConversion(hours).time;
+    time.innerText = `${timeTwentyfour < 10 ? `0${timeTwentyfour}` : timeTwentyfour}:${
+      minutes < 10 ? `0${minutes}` : minutes
+      }:${seconds < 10 ? `0${seconds}` : seconds}`;
+    period.innerText = meridiem;
+  }
+
+  /*
+  succ code
   localStorage.setItem("hour", hours);
 
   if (typesHandle === "12hours") {
     hoursChristmas();
     function hoursChristmas() {
-      //console.log("have to alone 'fun'c Christmas");
       let hoursTL = "";
       const localValue = localStorage.hour;
       const transform =
@@ -54,6 +87,8 @@ function setupDate() {
       //console.log(timeInterface, periodInterface); // Execution test complet
     }
   }
+  */
+
   function init() {
     new Intl.DateTimeFormat("ko-KR").format(hours);
   }
