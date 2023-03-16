@@ -1,7 +1,7 @@
 const body = document.querySelector("body");
 const source = document.querySelector(".js-source");
 
-const IMG_NUMBER = 19;
+const IMG_NUMBER = 21;
 
 function printImg(imgNumber) {
   const img = new Image();
